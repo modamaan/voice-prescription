@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src=".github/openscribe-banner.png" alt="OpenScribe Banner" width="5%" />
+<img src=".github/openscribe-banner.png" alt="Voice Prescription Banner" width="5%" />
 
-# OpenScribe
+# Voice Prescription
 
 Open-source AI medical scribe for recording encounters and generating structured clinical notes.
 
@@ -23,7 +23,7 @@ Open-source AI medical scribe for recording encounters and generating structured
 
 ## Project Overview
 
-OpenScribe is a free, MIT-licensed, open-source AI medical scribe that helps clinicians record patient encounters, transcribe audio, and generate structured draft clinical notes using LLMs. The default web deployment path is mixed mode: local Whisper transcription + Anthropic Claude note generation. A fully local desktop path is also available, forked from [StenoAI](https://github.com/ruzin/stenoai).
+Voice Prescription is a free, MIT-licensed, open-source AI medical scribe that helps clinicians record patient encounters, transcribe audio, and generate structured draft clinical notes using LLMs. The default web deployment path is mixed mode: local Whisper transcription + Anthropic Claude note generation. A fully local desktop path is also available, forked from [StenoAI](https://github.com/ruzin/stenoai).
 
 - [Demo](https://www.loom.com/share/1ccd4eec00eb4ddab700d32734f33c28)
 - [Architecture](./architecture.md)
@@ -31,7 +31,7 @@ OpenScribe is a free, MIT-licensed, open-source AI medical scribe that helps cli
 - [Download and Use Desktop](./docs/DOWNLOAD_AND_USE.md)
 - [Desktop Release Runbook](./docs/RELEASE_RUNBOOK.md)
 
-OpenScribe is not HIPAA compliant yet. The team is actively working toward HIPAA compliance.
+Voice Prescription is not HIPAA compliant yet. The team is actively working toward HIPAA compliance.
 
 ## Demo
 
@@ -53,7 +53,7 @@ OpenScribe is not HIPAA compliant yet. The team is actively working toward HIPAA
 
 ## Download Desktop App (No Dev Setup)
 
-If you only want to try OpenScribe as an app:
+If you only want to try Voice Prescription as an app:
 
 1. Open [latest releases](https://github.com/sammargolis/OpenScribe/releases/latest).
 2. Download the installer for your OS/arch.
@@ -133,7 +133,7 @@ Manual reviewer sign-off template: [docs/MANUAL_SIGNOFF_TEMPLATE.md](./docs/MANU
 
 ## Quick Start (Docker)
 
-SAM is the easiest way to run OpenScribe for new contributors: one command starts the web app and local Whisper transcription service.
+SAM is the easiest way to run Voice Prescription for new contributors: one command starts the web app and local Whisper transcription service.
 
 ### 1. Create SAM env file
 
@@ -169,7 +169,7 @@ curl http://127.0.0.1:8002/health
 
 ## Runtime Modes
 
-OpenScribe supports three workflows. **Mixed web mode is the default path.**
+Voice Prescription supports three workflows. **Mixed web mode is the default path.**
 
 ### Mixed Web (default)
 - Transcription: local Whisper server (`pnpm whisper:server`) with default model `tiny.en`
@@ -200,7 +200,7 @@ OpenScribe supports three workflows. **Mixed web mode is the default path.**
 ### OpenClaw + OpenEMR Demo Handoff (desktop)
 - The note editor now includes `Send to OpenClaw` (desktop app path).
 - Trigger flow: record encounter -> note appears -> click `Send to OpenClaw`.
-- OpenScribe sends patient/note context to OpenClaw and requests an OpenEMR note action.
+- Voice Prescription sends patient/note context to OpenClaw and requests an OpenEMR note action.
 
 Optional environment variables for demos:
 
@@ -293,7 +293,7 @@ overrides the visit type for every encounter.
 
 ## Purpose and Philosophy
 
-OpenScribe exists to provide a simple, open-source alternative to cloud dependent clinical documentation tools. The project is built on core principles:
+Voice Prescription exists to provide a simple, open-source alternative to cloud dependent clinical documentation tools. The project is built on core principles:
 
 - **Local-first storage**: Encounter data is stored locally in the browser by default
 - **Privacy-conscious**: No analytics or telemetry in the web app; external model calls are explicit and configurable
@@ -409,7 +409,7 @@ See [architecture.md](./architecture.md) for complete details.
 
 ## Limitations & Disclaimers
  
-**HIPAA Compliance**: OpenScribe includes foundational privacy/security features, but this alone does not make the application HIPAA-compliant. Below is what is already built, followed by a checklist a health system must complete to operate compliantly.
+**HIPAA Compliance**: Voice Prescription includes foundational privacy/security features, but this alone does not make the application HIPAA-compliant. Below is what is already built, followed by a checklist a health system must complete to operate compliantly.
 
 **Built (foundational rails)**
 - AES-GCM encrypted localStorage for PHI at rest in the browser
@@ -486,7 +486,7 @@ SOFTWARE.
 ## Citation
 
 ```
-OpenScribe
+Voice Prescription
 GitHub: https://github.com/sammargolis/OpenScribe
 Maintainer: Sam Margolis (@sammargolis)
 ```
