@@ -6,17 +6,7 @@
 
 Open-source AI medical scribe for recording encounters and generating structured clinical notes.
 
-<p>
-  <a href="https://github.com/sammargolis/OpenScribe/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License">
-  </a>
-  <a href="https://discord.gg/BcNNspcNE8">
-    <img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
-  </a>
-  <a href="https://www.loom.com/share/1ccd4eec00eb4ddab700d32734f33c28">
-    <img src="https://img.shields.io/badge/Demo-Watch-000000?style=for-the-badge" alt="Demo">
-  </a>
-</p>
+
 
 </div>
 
@@ -25,19 +15,10 @@ Open-source AI medical scribe for recording encounters and generating structured
 
 Voice Prescription is a free, MIT-licensed, open-source AI medical scribe that helps clinicians record patient encounters, transcribe audio, and generate structured draft clinical notes using LLMs. The default web deployment path is mixed mode: local Whisper transcription + Anthropic Claude note generation. A fully local desktop path is also available, forked from [StenoAI](https://github.com/ruzin/stenoai).
 
-- [Demo](https://www.loom.com/share/1ccd4eec00eb4ddab700d32734f33c28)
-- [Architecture](./architecture.md)
-- [Contributing](./CONTRIBUTING.md)
-- [Download and Use Desktop](./docs/DOWNLOAD_AND_USE.md)
-- [Desktop Release Runbook](./docs/RELEASE_RUNBOOK.md)
+
 
 Voice Prescription is not HIPAA compliant yet. The team is actively working toward HIPAA compliance.
 
-## Demo
-
-[Demo](https://www.loom.com/share/1ccd4eec00eb4ddab700d32734f33c28)
-
-[![Watch Demo](.github/demo.gif)](https://www.loom.com/share/1ccd4eec00eb4ddab700d32734f33c28)
 
 
 ## Star History
